@@ -1,0 +1,20 @@
+{
+  "name": "javascript_read_again",
+  "version": "1.0.0",
+  "description": "### 再次读一边javascript的书籍。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krui0728/javascript_read_again.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krui0728/javascript_read_again/issues"
+  },
+  "homepage": "https://github.com/krui0728/javascript_read_again#readme"
+}
