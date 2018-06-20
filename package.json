@@ -4,9 +4,8 @@
   "description": "### 再次读一边javascript的书籍。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server",
-    "test": "webpack"
+    "test": "webpack",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",

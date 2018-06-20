@@ -1,6 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 // 做成多入口的文件
 let multiEntry = {};
 console.log('多入口的文件::' + multiEntry);
@@ -42,11 +44,13 @@ module.exports = {
   output: {
     path: distURL,
     filename: "[name].js"
+  },
+  plugins: [
+    new HtmlWebpackPlugin()
+  ],
+  devServer: {
+    contentBase: distURL,
+    compress: false,
+    port: 9000
   }
-  // },
-  // devServer: {
-  //   contentBase: distURL,
-  //   compress: false,
-  //   port: 9000
-  // }
 }
