@@ -4,8 +4,8 @@
 // String.raw(obj, ...substitutions);
 var name = "bob";
 
-console.log(`hello \t${name}`);
-console.log(String.raw`hello \t${name}`);
-console.log(String.raw({ raw: 'fred'}, 'F', 'R', 'E'));  // fFrReEd
+// console.log(`hello \t${name}`);
+// console.log(String.raw`hello \t${name}`);
+// console.log(String.raw({ raw: 'fred'}, 'F', 'R', 'E'));  // fFrReEd
 // The following usage for String.raw is supported but
 // is not typical.

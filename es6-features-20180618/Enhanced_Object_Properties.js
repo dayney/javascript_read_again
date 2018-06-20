@@ -2,7 +2,7 @@
 // Property Shorthand
 var x = 0, y = 0
 obj0 = { x, y }
-console.log(obj0);
+// console.log(obj0);
 
 // Computed Property Names
 function quux() {
@@ -12,8 +12,8 @@ let obj = {
   foo: "bar",
   ["baz" + quux()] : 42
 }
-console.log(obj);
-console.log(obj[ "baz" + quux() ]);
+// console.log(obj);
+// console.log(obj[ "baz" + quux() ]);
 
 // Method Properties
 
@@ -29,6 +29,6 @@ objFn = {
   }
 }
 
-console.log(objFn.foo(11, 22));
-console.log(objFn.bar(11, 22));
-console.log(objFn.quux(11, 22));
+// console.log(objFn.foo(11, 22));
+// console.log(objFn.bar(11, 22));
+// console.log(objFn.quux(11, 22));

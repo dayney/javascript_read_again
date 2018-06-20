@@ -18,19 +18,19 @@ for (let i = 0; i <= 2; i++) {
 // callbacks[0]() === 0
 // callbacks[1]() === 2
 // callbacks[2]() === 4
-console.log(callbacks[0]());
-console.log(callbacks[1]());
-console.log(callbacks[2]());
+// console.log(callbacks[0]());
+// console.log(callbacks[1]());
+// console.log(callbacks[2]());
 
 {
   function foo () { return 1 }
-  console.log(foo());
+  // console.log(foo());
   // foo() === 1
   {
       function foo () { return 2 }
-      console.log(foo());
+      // console.log(foo());
       // foo() === 2
   }
   // foo() === 1
-  console.log(foo());
+  // console.log(foo());
 }

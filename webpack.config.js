@@ -45,12 +45,21 @@ module.exports = {
     path: distURL,
     filename: "[name].js"
   },
+  module: {
+    rules: [
+      { test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      }
+    ]
+  },
   plugins: [
     new HtmlWebpackPlugin()
+  // ]
   ],
   devServer: {
     contentBase: distURL,
-    compress: false,
+    compress: true,
     port: 9000
   }
 }
