@@ -40,7 +40,10 @@ console.log(multiEntry);
 
 module.exports = {
   mode: "production", // "production" | "development" | "none"
-  entry: multiEntry,
+  // entry: multiEntry,
+  entry: {
+    a: './es6-features-20180618/'
+  },
   output: {
     path: distURL,
     filename: "[name].js"
@@ -55,11 +58,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin()
-  // ]
-  ],
-  devServer: {
-    contentBase: distURL,
-    compress: true,
-    port: 9000
-  }
+  ]
+  // ],
+  // devServer: {
+  //   contentBase: distURL,
+  //   compress: true,
+  //   port: 9000
+  // }
 }
